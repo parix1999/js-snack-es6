@@ -14,11 +14,11 @@ var bici = [
     },
     {
         nome : 'tornado',
-        peso: 70
+        peso: 40
     },
     {
         nome : 'saetta',
-        peso: 40
+        peso: 70
     }
 ];
 
@@ -43,23 +43,24 @@ var bici = [
 // Versione ES6:
 
 let biciLeggera;
-let biciPiùLeggera;
-
+let pesoBiciLeggera = 100;
+debugger
 for (let i = 0; i < bici.length; i++) {
     
     const { peso } = bici[i];
-    
-    if (typeof biciPiùLeggera === 'undefined' || weight < biciPiùLeggera) {
+    console.log(peso);
+    if (peso < pesoBiciLeggera) {
         biciLeggera = bici[i];
-        biciLeggera = peso;
+        pesoBiciLeggera = peso;
+        
+        console.log(biciLeggera);
+        console.log(pesoBiciLeggera);
     }
-
+    
 }
-const { nome } = biciLeggera;
 
-console.log(biciLeggera)
-;
-document.getElementById('result').innerHTML = `La bici più leggera è: ${nome} con un peso di : ${biciLeggera} `;
+console.log(biciLeggera);
+document.getElementById('result').innerHTML = `La bici più leggera è: ${biciLeggera.nome}, con un peso di : ${biciLeggera.peso} `;
 
 
 
