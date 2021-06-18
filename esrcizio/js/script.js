@@ -28,6 +28,7 @@ for (var x = 0; x < bici.length; x++) {
         LapiùLeggera = weight;   
     }
 }
+
 console.log(n)
 console.log(LapiùLeggera)
 document.getElementById('result').innerHTML = `La Bici con il peso minore è: ${n} con un peso di: ${LapiùLeggera} `;
