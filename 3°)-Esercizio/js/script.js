@@ -46,9 +46,9 @@ for (let i = 0; i < teams.length; i++) {
     let tableRow = '<ul>'; // Una variabile locale: 
     var lista = teams[i];
 
-    tableRow = '<li>' + lista.nome + '</li>';
-    tableRow = '<li>' + lista.falli + '</li>';
-    tableRow = '<li>' + lista.punti + '</li>';
+    tableRow += '<li>' + lista.nome + '</li>';
+    tableRow += '<li>' + lista.falli + '</li>';
+    tableRow += '<li>' + lista.punti + '</li>';
 
     tableRow += '</ul>';
     tableHtml.innerHTML += tableRow;
