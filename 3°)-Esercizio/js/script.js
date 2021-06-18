@@ -38,6 +38,8 @@ for (let i = 0; i < teams.length; i++) {
 console.log(teams);
 console.log(newArray);
 
+//Prova di stampa tabellare:
+
 
 
 
