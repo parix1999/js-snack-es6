@@ -39,7 +39,19 @@ console.log(teams);
 console.log(newArray);
 
 //Prova di stampa tabellare:
+tableHtml = document.querySelector('.table-container');
 
+for (let i = 0; i < teams.length; i++) {
+    // Scrittura tableRow a livello di stringa:
+    let tableRow = '<ul>'; // Una variabile locale: 
+    var team = teams[i];
 
+    tableRow = '<li>' + teams.nome + '</li>';
+    tableRow = '<li>' + teams.falli + '</li>';
+    tableRow = '<li>' + teams.punti + '</li>';
+
+    tableRow += '</ul>';
+    tableHtml.innerHTML += tableRow;
+}
 
 
