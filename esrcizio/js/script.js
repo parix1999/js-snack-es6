@@ -17,16 +17,15 @@ var bici = [
 ];
 
 // Per vedere qual'è la bici che pesa meno : 
-
 var biciLeggera;
 var LapiùLeggera;
 
 for (var x = 0; x < bici.length; x++) {
-    console.log(bici[x])
     var weight = bici[x].peso;
+    
     if (typeof LapiùLeggera === 'undefined' || weight < LapiùLeggera) {
         biciLeggera = bici[x];
-        biciLeggera = weight;
+        LapiùLeggera = weight;   
     }
 }
 console.log(LapiùLeggera)
