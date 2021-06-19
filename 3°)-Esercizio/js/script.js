@@ -19,7 +19,7 @@ const teams = [
         falli : 0
     },
     {
-        nome : 'juventus',
+        nome : 'Juventus',
         punti : 0,
         falli : 0
     },
@@ -55,13 +55,12 @@ console.log(newArray);
 //Prova di stampa tabellare:
 tableHtml = document.querySelector('.table-container');
 
-let penalty; // qui ci va l'oggetto falli
+
 let falliMax = 0; // i falli maggiori 
 
 for (let x = 0; x < teams.length; x++) {
     const {falli} = teams[x];
     if (falli > falliMax) {
-        penalty = teams[x];
         falliMax = falli;
     }
 }
