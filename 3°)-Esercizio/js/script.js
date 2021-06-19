@@ -74,13 +74,11 @@ for (let i = 0; i < teams.length; i++) {
     
     tableRow += '<li>' + lista.nome + '</li>';
     if (lista.falli === falliMax){
-        tableRow += '<li class="prova">' + lista.falli + '</li>';
+        tableRow += '<li class="color-yellow-max">' + lista.falli + '</li>';
 
     }else{
         tableRow += '<li>' + lista.falli + '</li>';
     }
-    
-    
     tableRow += '<li>' + lista.punti + '</li>';
 
     tableRow += '</ul>';
